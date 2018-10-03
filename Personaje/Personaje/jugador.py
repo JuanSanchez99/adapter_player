@@ -3,9 +3,12 @@
 
 """
 import pygame,sys
-from disparo import *
+from Personaje.Personaje.disparo import Misil
 
 #Hereda de Sprite
+
+
+
 class Personaje(pygame.sprite.Sprite):
     
     #constructor de la clase Personaje

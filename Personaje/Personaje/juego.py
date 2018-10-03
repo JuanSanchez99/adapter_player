@@ -5,7 +5,7 @@
 import pygame,sys
 from pygame.locals import *
 #importar la clase jugador
-from jugador import *
+from Personaje.Personaje.jugador import Personaje
 #Variables
 ANCHO=1000
 ALTO=640
@@ -59,6 +59,7 @@ def juego():
                         x,y=personaje.rect.center
                         personaje.disparar(x,y)
         pygame.display.update()
+
 #llamada a funcion principal
 if __name__ == '__main__':
     juego()
