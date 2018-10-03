@@ -38,9 +38,9 @@ def juego():
         ventana.blit(fondo, (0, 0))
         ventana.blit(texto, (300, 100))
         personaje.addCharacter(ventana)
-        if len(personaje.getArrayDisparo()) > 0:
-            for x in personaje.getArrayDisparo():
-                x.addCharacter(ventana)
+        if len(personaje.listaDisparo) > 0:
+            for x in personaje.listaDisparo:
+                x.dibujar(ventana)
                 x.recorrido()
                 if x.rect.left < -10:
                     personaje.listaDisparo.remove(x)
